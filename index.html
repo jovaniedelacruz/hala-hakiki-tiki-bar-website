@@ -41,25 +41,18 @@
 
   <div class="page-body">
 
-    <header class="header">
-      <script>
-        $('.header').load('header.html');
-      </script>
-
-    </header>
     <div class="home">
-      <div class="home--front">
+      <div class="home__front">
         <img src="img/design-hala-kahiki-tiki-bar-frontbar.jpg" alt="Front bar">
-        <div class="home--front--container max-width">
-          <div class="home--front--text">
-            <h1>Text text</h1>
-            <h3>text text</h3>
-            <div class="home--front--buttons">
-              <a href="contact.html" class="button button--solid button--blue">Get Started</a>
-              <a href="about.html" class="button button--thin button--white">Learn More</a>
-            </div>
+        <div class="home__front__text">
+          <h1>Hala Kahiki</h1>
+          <h3>Tropical Lounge</h3>
+          <div class="home__front__buttons">
+            <a href="#" class="button button--solid button--blue">Drink Menu</a>
+            <a href="#" class="button button--thin button--white">Reservations</a>
           </div>
         </div>
+
       </div>
     </div>
 
@@ -69,7 +62,19 @@
       </div>
     </section>
 
+    <section class="newsletter-signup section-containe background-light black-text">
+      <h2>Hala Kahiki Newsletter</h2>
+      <p>Signup for exclusive announcements and promotions!</p>
+      <form name="mailinglist" class="form form--newsletter">
 
+        <label class="form__label" for="EmailAddress">
+          <p>Email Address</p>
+        </label>
+        <input class="form__input required" type="text" name="EmailAddress" id="EmailAddress" value="" size="30" maxlength="200">
+        <input id="fishbowl_submit" type="submit" name="Submit" class="form__submit__button button gray_button" value="Submit">
+
+      </form>
+    </section>
     <footer class="footer">
       <script>
         $('.footer').load('footer.html');
