@@ -1,3 +1,13 @@
+// Color Variables
+$orange : #F14B24;
+$green : #5ABA48;
+$darkblue : #011936;
+$strongblue : #022E64;
+$normalblue : #03418C;
+$lightblue : #8EA8C3;
+$lightorange : #EFC69B;
+$light : #EFEFEF;
+
 body,
 html {
   margin: 0;
@@ -111,7 +121,7 @@ body {
 }
 
 .background-white {
-  background: white;
+  background: $light;
 }
 
 .background-gray {
@@ -119,7 +129,7 @@ body {
 }
 
 .background-light {
-  background: #F0F3BD;
+  background: $lightblue;
 }
 
 .white-text {
@@ -277,12 +287,12 @@ p.thin {
 
     &--blue {
       color: #fff;
-      background-color: #028090;
-      border-color: #028090;
+      background-color: $strongblue;
+      border-color: $strongblue;
 
       &:hover {
-        background-color: #00A896;
-        border-color: #00A896;
+        background-color: $normalblue;
+        border-color:  $normalblue;
         transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
       }
 
@@ -321,8 +331,8 @@ p.thin {
   }
 
   .header {
-    background: #05668D;
-    outline: #05668D;
+    background: $darkblue;
+    outline: $darkblue;
     color: white;
 
     &__container {
@@ -439,8 +449,8 @@ p.thin {
   .sticky-menu {
     position: fixed;
     bottom: 0;
-    background: #05668d;
-    outline: #05668d;
+    background: $darkblue;
+    outline: $darkblue;
     color: white;
     font-family: 'Skranji-Regular';
     z-index: 500;
@@ -502,8 +512,8 @@ p.thin {
           text-align: center;
 
           &--first {
-            background: #028090;
-            outline: #028090;
+            background: $strongblue;
+            outline:  $strongblue;
           }
 
           &__link {
@@ -528,8 +538,8 @@ p.thin {
             &:hover {
               color: rgba(255, 255, 255, 1) !important;
               text-decoration: underline;
-              background: #00A896;
-              outline: #00A896;
+              background:  $normalblue;
+              outline:  $normalblue;
             }
           }
         }
@@ -691,7 +701,7 @@ p.thin {
             margin: 0 auto;
             display: block;
             margin-bottom: 1rem;
-            background: #0d6efd;
+            background: $darkblue;
             border-radius: 0.3rem !important;
             height: 3rem;
             width: 3rem;
@@ -808,6 +818,7 @@ p.thin {
 
   .newsletter-signup {
     padding: 2rem 3rem;
+    background: $lightorange;
   }
 
   .form {
@@ -849,8 +860,8 @@ p.thin {
         font-size: 1.25rem;
         border-radius: 0.3rem;
         color: white !important;
-        background-color: #028090;
-        border-color: #028090;
+        background-color: $darkblue;
+        border-color: $darkblue;
 
         &.disabled {
           opacity: 0.5;
@@ -868,7 +879,7 @@ p.thin {
     font-weight: 300;
     font-size: 1em;
     display: block;
-    background: #05668d;
+    background: $darkblue;
     color: white;
     margin-top: auto;
     text-align: center;
@@ -1027,8 +1038,8 @@ p.thin {
             font-size: 1.25rem;
             border-radius: 0.3rem;
             color: #fff;
-            background-color: #0d6efd;
-            border-color: #0d6efd;
+            background-color: $strongblue;
+            border-color: $strongblue;
 
             &.disabled {
               opacity: 0.5;
