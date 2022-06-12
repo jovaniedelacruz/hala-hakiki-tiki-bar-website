@@ -457,7 +457,7 @@ p.thin {
     display: block;
     width: 100%;
     text-align: right;
-    padding-bottom: 0.25rem;
+  border-top: 3px solid $normalblue;
 
     &__button {
       &__container {
