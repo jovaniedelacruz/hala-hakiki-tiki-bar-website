@@ -583,7 +583,7 @@ p.thin {
         position: relative;
         display: block;
         height: 0;
-        padding-bottom: 10em;
+        padding-bottom: 8em;
         width: 100%;
 
         &__img {
@@ -1001,40 +1001,46 @@ p.thin {
   }
 
   .footer {
-    padding: 0 0 5rem;
+    padding: 1rem 3rem 5rem 3rem;
     font-family: 'Skranji-Regular' !important;
     font-style: normal;
     font-weight: 300;
-    font-size: 1em;
     display: block;
     background: $darkblue;
     color: white;
     margin-top: auto;
     text-align: center;
 
-    p,
+    h2 {
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.15em;
+      font-family: 'Skranji-Regular' !important;
+    }
+
+    a,
+    a:visited {
+      color: white;
+    }
+
     table {
       font-size: 1.15em;
       font-family: 'Skranji-Regular' !important;
       margin: 0 auto;
+      width: 100%;
 
       &.footer__info--title {
-        font-size: 1.5em;
         margin-bottom: 0.25em;
-      }
-
-      a,
-      a:visited {
-        color: white;
       }
     }
 
     &__info {
-      padding: 2rem 3rem 0;
+      padding: 0.5rem 0;
 
-      &--title {
-        font-size: 1.5em;
-      }
+      &--title {}
     }
 
     &--container {}
