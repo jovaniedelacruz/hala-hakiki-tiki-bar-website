@@ -129,7 +129,11 @@ body {
 }
 
 .background-light {
-  background: $lightblue;
+  background: $light;
+}
+
+.background-darkblue {
+  background: $strongblue;
 }
 
 .white-text {
@@ -151,6 +155,10 @@ body {
 .margin-centered {
   margin-left: auto;
   margin-right: auto;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0;
 }
 
 .section-container {
@@ -457,7 +465,7 @@ p.thin {
     display: block;
     width: 100%;
     text-align: right;
-  border-top: 3px solid $normalblue;
+    border-top: 3px solid $normalblue;
 
     &__button {
       &__container {
@@ -571,6 +579,14 @@ p.thin {
       height: 100%;
       top: 0;
       left: 0;
+    }
+
+    a,
+    a:hover,
+    a:visited {
+      color: white;
+      text-decoration: none;
+      cursor: p;
     }
 
     &__front {
@@ -860,6 +876,14 @@ p.thin {
     }
   }
 
+  .drink-menu {
+    &__menu {
+      &__item {
+        margin-top: 1em;
+      }
+    }
+  }
+
   .about {
     &--text {
       &--profile {
@@ -1001,7 +1025,7 @@ p.thin {
   }
 
   .footer {
-    padding: 1rem 3rem 5rem 3rem;
+    padding: 1rem 3rem 5rem;
     font-family: 'Skranji-Regular' !important;
     font-style: normal;
     font-weight: 300;
@@ -1024,6 +1048,14 @@ p.thin {
     a,
     a:visited {
       color: white;
+    }
+
+    &__info {
+      &__logo {
+        margin: 0 auto;
+        height: 6em;
+        width: auto;
+      }
     }
 
     table {
