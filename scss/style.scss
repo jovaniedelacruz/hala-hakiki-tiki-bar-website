@@ -1,12 +1,12 @@
 // Color Variables
-$orange : #F14B24;
-$green : #5ABA48;
-$darkblue : #011936;
-$strongblue : #022E64;
-$normalblue : #03418C;
-$lightblue : #8EA8C3;
-$lightorange : #EFC69B;
-$light : #EFEFEF;
+$orange: #F14B24;
+$green: #5ABA48;
+$darkblue: #011936;
+$strongblue: #022E64;
+$normalblue: #03418C;
+$lightblue: #8EA8C3;
+$lightorange: #EFC69B;
+$light: #EFEFEF;
 
 body,
 html {
@@ -292,7 +292,7 @@ p.thin {
 
       &:hover {
         background-color: $normalblue;
-        border-color:  $normalblue;
+        border-color: $normalblue;
         transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
       }
 
@@ -513,7 +513,7 @@ p.thin {
 
           &--first {
             background: $strongblue;
-            outline:  $strongblue;
+            outline: $strongblue;
           }
 
           &__link {
@@ -538,8 +538,8 @@ p.thin {
             &:hover {
               color: rgba(255, 255, 255, 1) !important;
               text-decoration: underline;
-              background:  $normalblue;
-              outline:  $normalblue;
+              background: $normalblue;
+              outline: $normalblue;
             }
           }
         }
@@ -555,9 +555,33 @@ p.thin {
 
     &__front {
       display: block;
-      height: 65vh;
+      height: 35rem;
+      max-height: 65vh;
       width: 100%;
       position: relative;
+
+      &__logo {
+        position: relative;
+        display: block;
+        padding: 1rem;
+
+        &__container {
+          position: relative;
+          display: block;
+        }
+
+        &__img {
+          margin: 0 auto;
+          height: 7.5rem;
+          background: transparent;
+          outline: none;
+          position: relative;
+          display: block;
+          background-color: transparent;
+          border: 1px solid transparent;
+          filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.8));
+        }
+      }
 
       &:before {
         content: "";
@@ -571,7 +595,7 @@ p.thin {
         background: linear-gradient(0deg, rgba(33,37,41,0.75) 20%, rgba(33,37,41,0.5) 33%, rgba(33,37,41,0) 100%);
       }
 
-      img {
+      &__background {
         object-position: 50% 15%;
         object-fit: cover;
         width: 100%;
