@@ -208,10 +208,10 @@ h4,
 h5,
 h6,
 p,
-strong {
+strong, ul, li, table, td  {
   font-family: 'Fira Sans';
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -249,6 +249,7 @@ h5 {
 }
 
 strong {
+  font-family: 'Fira Sans';
   font-weight: bold;
   margin-bottom: 0;
 }
