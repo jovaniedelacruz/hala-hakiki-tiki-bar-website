@@ -47,22 +47,21 @@
             <img src="img/Hala-Kahiki-Logo-White.png" alt="" class="home-page__front__logo__img">
           </div>
           <div class="home-page__front__text">
-            <h1 class="home-page__front__text__h1">Hala Kahiki</h1>
-            <h3 class="home-page__front__text__h3">Tropical Lounge</h3>
+            <h1 class="home__front__text__headline">Hala Kahiki</h1>
+            <h3 class="home__front__text__headline">Tropical Lounge</h3>
           </div>
         </a>
-
       </div>
     </div>
     <a id="reservations-anchor"></a>
     <section class="about--container section-container background-darkblue white-text">
       <div class="text-centered global-padding">
-        <h1 class="no-bottom-margin">Reservations</h1>
+        <h2 class="no-bottom-margin">Reservations</h2>
       </div>
     </section>
-    <section class="about--container section-container background-white">
+    <section class="section-container background-white">
       <div class="row">
-        <div class="col-md-6 global-padding"><a id="contact-anchor"></a>
+        <div class="col-md-6 global-padding">
           <p><strong>To place a reservation please call during our business hours.</strong></p></br>
           <p><a href="tel:7084563222">(708) 456-3222</a></p></br>
           <p>Reservations must be made at least 48 hours in advance. You may call ahead thirty minutes before your arrival to be put onto a waitlist. Being added onto the waitlist is not a reservation and does not gaurantee seating. We don't accept
@@ -76,14 +75,16 @@
         </div>
       </div>
       <div class="row">
-        <div class="d-inline-block img-standard">
-          <img class="img-fluid my-5 margin-centered" src="img\tiki-03.jpg" alt="...">
+        <div class="col-md-6 d-inline-block overflow-hidden">
+          <div class="img-fill-ratio--3-2">
+            <img class="img-fluid my-5 margin-centered" src="img\tiki-03.jpg" alt="...">
+          </div>
         </div>
       </div>
     </section>
     <section class="about--container section-container background-darkblue white-text">
       <div class="text-centered global-padding">
-        <h1 class="no-bottom-margin">Large Groups & Parties</h1>
+        <h2 class="no-bottom-margin">Large Groups & Parties</h2>
       </div>
     </section>
     <section class="about--container section-container background-white">
@@ -91,8 +92,7 @@
         <div class="col-md-6 global-padding">
 
           <p><strong>We are maintaining limited large group options but may be able to accomodate your group. Please send us an email to discuss your plans.</strong></p></br>
-
-          <h2>Have your next event at Hala Kahiki!</h2>
+          <h3>Have your next event at Hala Kahiki!</h3>
           <p>We have a fantastic, versatile space that can accomodate parties up to 100 people. Our table setup can be re-arranged, added to, or removed to fit your event. We do not offer food on site but can accomodate to caterers and other food
             provisions. Additionally, we have a large outdoor garden area available weather permitting.</p></br>
 
@@ -104,37 +104,27 @@
         </div>
       </div>
     </section>
-    <section class="about--container section-container background-white">
+    <section class="section-container background-white">
       <div class="row">
-        <div class="col-md-6 d-inline-block img-standard">
-          <img class="img-fluid my-5 margin-centered" src="img\hula-2407825_1920.jpg" alt="...">
+        <div class="col-md-6 d-inline-block img-fill-ratio--3-2">
+          <img class="my-5 margin-centered" src="img\hula-2407825_1920.jpg" alt="...">
         </div>
         <div class="col-md-6 global-padding ">
-          <h2>Luau Shows</h2>
-          <p class="">Monthly Luau Shows are back! Shows take place on the last Saturday of every month. Tickets must be purchased in advance and are only available online. Seats are limited so keep up with shows dates on the events
+          <h3>Luau Shows</h3>
+          <p class="text-muted">Monthly Luau Shows are back! Shows take place on the last Saturday of every month. Tickets must be purchased in advance and are only available online. Seats are limited so keep up with shows dates on the events
             calendar or in the newsletter.</p>
-
           <div class="home--hero--buttons">
-            <a href="#" class="button button--solid button--blue text-centered">Buy Tickets</a>
+            <a href="events.html" class="button button--solid button--blue text-centered">Upcoming Events</a>
           </div>
         </div>
-
-
       </div>
     </section>
 
-    <section class="newsletter-signup section-container background-light black-text">
-      <h2>Hala Kahiki Newsletter</h2>
-      <p>Signup for exclusive announcements and promotions!</p>
-      <form name="mailinglist" class="form form--newsletter">
 
-        <label class="form__label" for="EmailAddress">
-          <p>Email Address</p>
-        </label>
-        <input class="form__input required" type="text" name="EmailAddress" id="EmailAddress" value="" size="30" maxlength="200">
-        <input id="fishbowl_submit" type="submit" name="Submit" class="form__submit__button button gray_button" value="Submit">
-
-      </form>
+    <section class="newsletter-signup-container">
+      <script>
+        $('.newsletter-signup-container').load('newsletter-signup.html');
+      </script>
     </section>
     <footer class="footer">
       <script>

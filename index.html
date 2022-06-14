@@ -50,8 +50,8 @@
             <img src="img/Hala-Kahiki-Logo-White.png" alt="" class="home-page__front__logo__img">
           </div>
           <div class="home-page__front__text">
-            <h1 class="home-page__front__text__h1">Hala Kahiki</h1>
-            <h3 class="home-page__front__text__h3">Tropical Lounge</h3>
+            <h1 class="home__front__text__headline">Hala Kahiki</h1>
+            <h3 class="home__front__text__headline">Tropical Lounge</h3>
           </div>
         </a>
 
@@ -84,8 +84,8 @@
     <section class="about--container section-container background-white">
       <div class="row">
         <div class="col-md-6 order-first global-padding ">
-          <h2>Tropical Oasis</h2>
-          <p class="text-muted">Serving the Midwest for over half a century, we've perfected our craft cocktails and service to put together a truly tropical oasis.</p>
+          <h3>Tropical Oasis</h3>
+          <p class="">Serving the Midwest for over half a century, we've perfected our craft cocktails and service to put together a truly tropical oasis.</p>
 
           <div class="home--hero--buttons">
             <a href="drink-menu.html" class="button button--solid button--blue text-centered">Discover our Drinks</a>
@@ -97,31 +97,28 @@
 
     <section class="about--container section-container background-white">
       <div class="row">
-        <div class="col-md-6 d-inline-block img-standard">
-          <img class="img-fluid my-5 margin-centered" src="img\hula-2407825_1920.jpg" alt="...">
+        <div class="col-md-6 d-inline-block img-fill-ratio--3-2">
+          <img class="my-5 margin-centered" src="img\hula-2407825_1920.jpg" alt="...">
         </div>
         <div class="col-md-6 global-padding ">
-          <h2>Luau Shows</h2>
-          <p class="text-muted">Monthly Luau Shows are back! Shows take place on the last Saturday of every month. Tickets must be purchased in advance and are only available online. Seats are limited so keep up with shows dates on the events
+          <h3>Luau Shows</h3>
+          <p class="">Monthly Luau Shows are back! Shows take place on the last Saturday of every month. Tickets must be purchased in advance and are only available online. Seats are limited so keep up with shows dates on the events
             calendar or in the newsletter.</p>
-
           <div class="home--hero--buttons">
             <a href="events.html" class="button button--solid button--blue text-centered">Upcoming Events</a>
           </div>
         </div>
-
-
       </div>
     </section>
 
     <section class="about--container section-container background-white">
       <div class="row">
-        <div class="col-md-6 d-inline-block img-standard">
+        <div class="col-md-6 d-inline-block img-fill-ratio--3-2">
           <img class="img-fluid my-5 margin-centered" src="img\tiki-bar-upstrairs-view.jpg" alt="...">
         </div>
         <div class="col-md-6 global-padding ">
-          <h2>Pure Escapism</h2>
-          <p class="text-muted">From the chairs, lights, tropical decor, paintings, and original WITCO artworks, everything about us is pure escapism. Let us take your mind away to your very own tropical oasis far, far away!</p>
+          <h3>Pure Escapism</h3>
+          <p class="">From the chairs, lights, tropical decor, paintings, and original WITCO artworks, everything about us is pure escapism. Let us take your mind away to your very own tropical oasis far, far away!</p>
 
           <div class="home--hero--buttons">
             <a href="reservations.html" class="button button--solid button--blue text-centered">Reservations</a>
@@ -133,12 +130,15 @@
 
     <section class="about--container section-container background-white">
       <div class="row">
-        <div class="col-md-6 d-inline-block img-standard">
-          <img class="img-fluid my-5 margin-centered" src="img\tiki-bar-white-room-patio.jpg" alt="...">
+        <div class="col-md-6 d-inline-block overflow-hidden">
+          <div class="img-fill-ratio--3-2">
+            <img class="img-fluid my-5 margin-centered" src="img\tiki-bar-white-room-patio.jpg" alt="...">
+          </div>
         </div>
+
         <div class="col-md-6 global-padding ">
-          <h2>Historical Authenticity</h2>
-          <p class="text-muted">Our origins trace back to Wicker Park, Chicago but since our move to River Grove, IL we've proudly served as the Midwest's most authentic retro tropical drink lounge.</p>
+          <h3>Historical Authenticity</h3>
+          <p class="">Our origins trace back to Wicker Park, Chicago but since our move to River Grove, IL we've proudly served as the Midwest's most authentic retro tropical drink lounge.</p>
           <div class="home--hero--buttons">
             <a href="about.html" class="button button--solid button--blue text-centered">About Us</a>
           </div>
@@ -146,20 +146,12 @@
 
       </div>
     </section>
-
-    <section class="newsletter-signup section-container background-light black-text">
-      <h2>Hala Kahiki Newsletter</h2>
-      <p>Signup for exclusive announcements and promotions!</p>
-      <form name="mailinglist" class="form form--newsletter">
-
-        <label class="form__label" for="EmailAddress">
-          Email Address
-        </label>
-        <input class="form__input required" type="text" name="EmailAddress" id="EmailAddress" value="" size="30" maxlength="200">
-        <input id="fishbowl_submit" type="submit" name="Submit" class="form__submit__button button gray_button" value="Submit">
-
-      </form>
+    <section class="newsletter-signup-container">
+      <script>
+        $('.newsletter-signup-container').load('newsletter-signup.html');
+      </script>
     </section>
+
     <footer class="footer">
       <script>
         $('.footer').load('footer.html');

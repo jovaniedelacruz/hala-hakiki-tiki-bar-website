@@ -47,26 +47,25 @@
             <img src="img/Hala-Kahiki-Logo-White.png" alt="" class="home-page__front__logo__img">
           </div>
           <div class="home-page__front__text">
-            <h1 class="home-page__front__text__h1">Hala Kahiki</h1>
-            <h3 class="home-page__front__text__h3">Tropical Lounge</h3>
+            <h1 class="home__front__text__headline">Hala Kahiki</h1>
+            <h3 class="home__front__text__headline">Tropical Lounge</h3>
           </div>
         </a>
-
       </div>
     </div>
     <section class="about--container section-container background-darkblue white-text">
       <div class="text-centered global-padding">
-        <h1 class="no-bottom-margin">Events</h1>
+        <h2 class="no-bottom-margin">Events</h2>
       </div>
     </section>
     <section class="about--container section-container background-gray ">
       <div class="row about--split max-width global-padding">
-        <div class="col-md-6 d-inline-block about--split--img">
+        <div class="col-md-6 d-inline-block img-fill-ratio--16-9">
           <img class="img-fluid rounded-3 my-5" src="img/hula-2407825_1920.jpg" alt="...">
         </div>
         <div class="col-md-6 about--split--text">
-          <h2 class="no-bottom-margin">Monthly Luau</h2>
-          <h3><span style="white-space: nowrap;">Dinner & Hula Show</span></h3>
+          <h3 class="no-bottom-margin">Monthly Luau</h3>
+          <h4><span style="white-space: nowrap;">Dinner & Hula Show</span></h4>
           <p>Monthly Luaus take place on the last saturday evening of every month. Enjoy a dance performance by The Barefoot Hawaiian and a catered luau inspired meal. We'll be offering table service for drinks troughout the evening. Tickets only include the dinner and show. </p></br>
           <p>Drinks are not included with ticket purchase.</p></br>
           <p>After the show, the lounge will be business as usual.</p></br>
@@ -80,8 +79,8 @@
     <section class="about--container section-container background-white">
       <div class="row about--split max-width global-padding">
         <div class="col-md-6 about--split--text order-last order-md-first">
-          <h2 class="no-bottom-margin">Lowbrow Aloha</h2>
-          <h3><span style="white-space: nowrap;">Lowbrow & Tiki Art Show</span></h3>
+          <h3 class="no-bottom-margin">Lowbrow Aloha</h3>
+          <h4><span style="white-space: nowrap;">Lowbrow & Tiki Art Show</span></h4>
           <p>Join us for an afternoon of drinks and shopping at our pop-up shop featuring lowbrow & tiki goods from the finest creative talents in the Midwest. Find merchandise from idols, to shrunken heads, hawaiian shirts, commemortive mugs, paintings, pins, and more! If you love the tiki bar motif this event is a must.</p></br>
           <p>The Lowbrow Aloha takes place up to three times a year so follow us on Facebook or join our newsletter to keep up with the events at Hala Kahiki!</p></br>
           <p><strong>Underage guests are permitted to attend this art show but you must be 21 and over with valid ID to consume alcohol.</strong></p>
@@ -89,21 +88,15 @@
             <a href="#" class="button button--solid button--blue text-centered">RSVP</a>
           </div>
         </div>
-        <div class="col-md-6 d-inline-block about--split--img order-first order-md-last">
+        <div class="col-md-6 d-inline-block img-fill-ratio--16-9 order-first order-md-last">
           <img class="img-fluid rounded-3 my-5" src="img/lowbrow-aloha.jpg" alt="...">
         </div>
       </div>
     </section>
-    <section class="newsletter-signup section-container background-light black-text">
-      <h2>Hala Kahiki Newsletter</h2>
-      <p>Signup for exclusive announcements and promotions!</p>
-      <form name="mailinglist" class="form form--newsletter">
-        <label class="form__label" for="EmailAddress">
-          <p>Email Address</p>
-        </label>
-        <input class="form__input required" type="text" name="EmailAddress" id="EmailAddress" value="" size="30" maxlength="200">
-        <input id="fishbowl_submit" type="submit" name="Submit" class="form__submit__button button gray_button" value="Submit">
-      </form>
+    <section class="newsletter-signup-container">
+      <script>
+        $('.newsletter-signup-container').load('newsletter-signup.html');
+      </script>
     </section>
     <footer class="footer">
       <script>

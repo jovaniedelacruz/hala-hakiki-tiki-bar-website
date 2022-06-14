@@ -1,1 +1,83 @@
+//main:style.scss
+
 // _custom-classes.scss
+.overflow-hidden {
+  overflow: hidden;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-fill-ratio {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom:5%;
+  overflow: hidden;
+  &--3-2 {
+    @extend .img-fill-ratio;
+    padding-bottom: 66.67%;
+  }
+  &--1-1 {
+    @extend .img-fill-ratio;
+    padding-bottom:100%;
+  }
+  &--16-9 {
+    @extend .img-fill-ratio;
+    padding-bottom:56.25%;
+  }
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+
+.text-centered {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.background-white {
+  background: white;
+}
+
+.background-gray {
+  background: #f8f9fa;
+}
+
+.background-light {
+  background: $light;
+}
+
+.background-darkblue {
+  background: $strongblue;
+}
+
+.white-text {
+  color: white;
+}
+
+.black-text {
+  color: black;
+}
+.margin-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0;
+}

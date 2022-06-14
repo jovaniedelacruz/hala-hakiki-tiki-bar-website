@@ -1,0 +1,85 @@
+//main:style.scss
+// _text.scss
+
+body {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-family: 'Skranji';
+  font-weight: 400;
+  margin-bottom: 1.75rem;
+}
+
+h2 {
+  font-family: 'Skranji';
+  font-weight: 400;
+  margin-bottom: 1.5em;
+}
+
+h3 {
+  font-family: 'Skranji';
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  font-family: 'Skranji';
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+
+h5 {
+  font-family: 'Skranji';
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+
+strong {
+  font-family: 'Fira Sans';
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+p {
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+p.thin {
+  font-weight: 100;
+  font-style: normal;
+  margin-bottom: 0;
+}
+
+.text-muted {
+  --bs-text-opacity: 1;
+  color: #6c757d !important;
+}
+
+.text-opacity {
+  --bs-text-opacity: 0.6;
+  opacity: 0.6;
+}
+@media screen and (min-width:50px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 3.8rem;
+  }
+
+  h3 {
+    font-size: 2.6rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  p, strong {font-size: 1.6rem;}
+}
+@media screen and (min-width:768px) {}
+@media screen and (min-width:1024px) {}

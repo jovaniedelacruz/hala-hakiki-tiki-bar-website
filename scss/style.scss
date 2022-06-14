@@ -2,189 +2,38 @@
 @import "variables";
 @import "custom-classes";
 @import "fonts";
-
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-
-.img-standard {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 66.6%;
-  overflow: hidden;
-
-  img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-}
-
-.text-centered {
-  text-align: center;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.background-white {
-  background: $light;
-}
-
-.background-gray {
-  background: #f8f9fa;
-}
-
-.background-light {
-  background: $light;
-}
-
-.background-darkblue {
-  background: $strongblue;
-}
-
-.white-text {
-  color: white;
-}
-
-.black-text {
-  color: black;
-}
-
-.global-margin {
-  margin: 1.5rem 3rem;
-}
-
-.global-padding {
-  padding: 3rem;
-}
-
-.margin-centered {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.no-bottom-margin {
-  margin-bottom: 0;
-}
-
-.section-container {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.head-max-char {
-  max-width: 80ch;
-}
-
-.rounded-3 {
-  border-radius: 0.3rem !important;
-}
-
-.stretched-link::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  content: "";
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-strong, ul, li, table, td  {
-  font-family: 'Fira Sans';
-  font-style: normal;
-  font-weight: 400;
-  margin: 0;
-}
-
-h1 {
-  font-family: 'Skranji';
-  font-weight: 400;
-  font-size: 2.5em;
-  margin-bottom: 1.75rem;
-}
-
-h2 {
-  font-family: 'Skranji';
-  font-weight: 400;
-  font-size: 1.75em;
-  margin-bottom: 1.5rem;
-}
-
-h3 {
-  font-family: 'Skranji';
-  font-weight: 400;
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-h4 {
-  font-family: 'Skranji';
-  font-weight: 400;
-  margin-bottom: 0.5rem;
-}
-
-h5 {
-  font-family: 'Skranji';
-  font-weight: 400;
-  margin-bottom: 0.5rem;
-}
-
-strong {
-  font-family: 'Fira Sans';
-  font-weight: bold;
-  margin-bottom: 0;
-}
-
-p {
-  font-weight: 400;
-  margin-bottom: 0;
-}
-
-p.thin {
-  font-weight: 100;
-  font-style: normal;
-  margin-bottom: 0;
-}
-
-.text-muted {
-  --bs-text-opacity: 1;
-  color: #6c757d !important;
-}
-
-.text-opacity {
-  --bs-text-opacity: 0.6;
-  opacity: 0.6;
-}
+@import "text";
 @media screen and (min-width:50px) {
-  h1 {
-    font-size: 2rem;
+  .global-margin {
+    margin: 3.2rem 4.8rem;
   }
 
-  h2 {
-    font-size: 1.6rem;
+  .global-padding {
+    padding: 3.2rem 4.8rem;
   }
 
-  h3 {
-    font-size: 1.33rem;
+  .section-container {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .head-max-char {
+    max-width: 80ch;
+  }
+
+  .rounded-3 {
+    border-radius: 0.3rem !important;
+  }
+
+  .stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
   }
 
   .page-body {}
@@ -197,15 +46,12 @@ p.thin {
     margin-bottom: 0;
     color: white;
     text-decoration: none;
+    padding: 1.6rem 3.2rem;
+    border-radius: 0.4em;
 
-    &--solid {
-      padding: 1rem 1.5rem;
-      border-radius: 0.3rem;
-    }
+    &--solid {}
 
     &--thin {
-      padding: 1rem 1.5rem;
-      border-radius: 0.3rem;
       background-color: transparent;
       border: 1px solid transparent;
     }
@@ -268,7 +114,6 @@ p.thin {
 
     &__line {
       font-family: 'Skranji';
-      font-size: 1.5em;
       display: inline-block;
       margin: 0;
       padding: 0;
@@ -389,17 +234,17 @@ p.thin {
         position: fixed;
         bottom: 0;
         right: 0;
-        margin-right: 1rem;
-        margin-bottom: 1rem;
+        margin-right:0.2em;
+        margin-bottom:0.2em;
       }
       position: relative;
       cursor: pointer;
-      padding: 0.25rem 0.75rem;
-      font-size: 1.25rem;
+      padding: 0.25em 0.75em;
+      font-size: 1.6rem;
       line-height: 1;
       background-color: transparent;
       border: 1px solid transparent;
-      border-radius: 0.25rem;
+      border-radius: 0.3rem;
       transition: box-shadow 0.15s ease-in-out;
       color: rgba(255, 255, 255, 0.85);
       -webkit-appearance: button;
@@ -409,8 +254,8 @@ p.thin {
       i {
         display: inline-block;
         vertical-align: middle;
-        font-size: 1.25em;
-        padding: 0.25rem;
+        font-size: 2.6rem;
+        padding: 1.6rem;
       }
     }
 
@@ -442,11 +287,11 @@ p.thin {
           }
 
           &__link {
-            font-size: 1.5em;
+            font-size: 2.6rem;
             text-align: inherit;
             display: inline-block;
             width: 100%;
-            padding: 1rem 1.5rem;
+            padding: 1.6rem 3.2rem;
             height: auto;
             text-decoration: none;
             color: white;
@@ -510,7 +355,7 @@ p.thin {
       position: relative;
       display: block;
       z-index: 2;
-      padding: 2rem 3rem;
+      padding: 3.2rem 4.8rem;
 
       &__logo {
         position: relative;
@@ -543,19 +388,14 @@ p.thin {
         color: white;
         z-index: 2;
 
-        &__h1 {
-          font-size: 3.25em;
+        & .home__front__text__headline:first-child {
           margin-bottom: 0;
-          max-width: 24ch;
           filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.8));
         }
 
-        &__h3 {
-          font-size: 1.75em;
-          max-width: 48ch;
+        & .home__front__text__headline:last-child {
+          margin-bottom: 0;
           filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.8));
-          --bs-text-opacity: 1;
-          color: rgba(255, 255, 255, 0.75) !important;
         }
       }
 
@@ -823,16 +663,12 @@ p.thin {
     }
 
     &--split {
-      padding: 3rem 1.5rem;
 
       &--text {
         margin: auto 0;
-        padding: 0 1.5rem;
       }
 
       &--img {
-        margin-bottom: 1.5rem;
-        padding: 0 1.5rem;
       }
     }
   }
@@ -886,7 +722,6 @@ p.thin {
   }
 
   .newsletter-signup {
-    padding: 2rem 3rem;
     background: $lightorange;
   }
 
@@ -896,21 +731,30 @@ p.thin {
     &__label {
       display: block;
     }
+    form > label {
+    }
 
     input {
+      font-size: 1.6rem;
       width: 100%;
-      font-family: 'Fira Sans';
-      border-radius: 0.25rem;
-      border: 1px solid #ced4da;
-      color: #212529;
-      padding: 0.5rem 0.75rem;
-      margin: 0.5rem 0;
+      margin: 0.75em 0;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        font-family: 'Fira Sans';
+        border-radius: 0.3rem;
+        border: 1px solid #ced4da;
+        color: #212529;
+        padding: 0.5rem 0.75rem;
+        margin: 0.75rem 0;
+        min-height: calc(1.5em + 0.75rem + 2px);
     }
 
     textarea {
       width: 100%;
       font-family: 'Fira Sans';
-      border-radius: 0.25rem;
+      border-radius: 0.3rem;
       border: 1px solid #ced4da;
       color: #212529;
       padding: 0.5rem 0.75rem;
@@ -922,15 +766,6 @@ p.thin {
     &__submit {
       &__button {
         cursor: pointer;
-        opacity: 1;
-        display: inline-block;
-        width: 100%;
-        padding: 0.5rem 1rem;
-        font-size: 1.25rem;
-        border-radius: 0.3rem;
-        color: white !important;
-        background-color: $darkblue;
-        border-color: $darkblue;
 
         &.disabled {
           opacity: 0.5;
@@ -942,7 +777,7 @@ p.thin {
   }
 
   .footer {
-    padding: 1rem 3rem 5rem;
+    padding: 3.2rem 4.8rem 8rem;
     font-family: 'Skranji' !important;
     font-style: normal;
     font-weight: 300;
@@ -953,12 +788,11 @@ p.thin {
     text-align: center;
 
     h2 {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.5em;
       text-align: center;
     }
 
     p {
-      font-size: 1.15em;
       font-family: 'Skranji' !important;
     }
 
@@ -976,7 +810,7 @@ p.thin {
     }
 
     table {
-      font-size: 1.15em;
+      font-size: 1.6rem;
       font-family: 'Skranji' !important;
       margin: 0 auto;
       width: 100%;
@@ -987,7 +821,7 @@ p.thin {
     }
 
     &__info {
-      padding: 0.5rem 0;
+      padding: 0.5em 0;
 
       &--title {}
     }
@@ -996,7 +830,7 @@ p.thin {
 
     &--list {
       display: block;
-      padding: 1.5rem 0;
+      padding: 1.5em 0;
       text-align: center;
 
       &--entry {
@@ -1006,8 +840,8 @@ p.thin {
         &--link {
           display: inline-block;
           width: auto;
-          margin: 0 1.5rem;
-          padding: 0.25rem 1.5rem;
+          margin: 0 1.5em;
+          padding: 0.25em 1.5em;
           height: auto;
           text-decoration: none;
           color: white;

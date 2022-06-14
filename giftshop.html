@@ -47,66 +47,55 @@
             <img src="img/Hala-Kahiki-Logo-White.png" alt="" class="home-page__front__logo__img">
           </div>
           <div class="home-page__front__text">
-            <h1 class="home-page__front__text__h1">Hala Kahiki</h1>
-            <h3 class="home-page__front__text__h3">Tropical Lounge</h3>
+            <h1 class="home__front__text__headline">Hala Kahiki</h1>
+            <h3 class="home__front__text__headline">Tropical Lounge</h3>
           </div>
         </a>
-
       </div>
     </div>
     <section class="about--container section-container background-darkblue white-text">
       <div class="text-centered global-padding">
-        <h1 class="no-bottom-margin">South Seas <span style="
-  white-space: nowrap;">Gift Shop</span></h1>
+        <h2 class="no-bottom-margin">South Seas <span style="
+  white-space: nowrap;">Gift Shop</span></h2>
       </div>
     </section>
 
     <section class="about--container section-container background-white">
       <div class="row">
         <div class="col-md-6 global-padding">
-          <h2>Visit our gift shop!</h2>
+          <h3>Visit our gift shop!</h3>
           <p>We have everything you need from genuine Hala Kahiki glassware, hula dashboard bobbles, tropical party favors, indoor and outdoor decorations, home furnishings like lamps and tiki statues,
             and authentic Made-In-Hawaii apparel for men, women, and children.</p></br>
           <p>Some of our items are only available to order online so be sure to checkout our Order Online page!</p></br>
 
           <div class="col-md-6 d-inline-block img-standard">
-            <img class="img-fluid my-5 margin-centered" src="img\tiki-gift-shop2.jpg" alt="...">
+            <img class="img-fluid rounded-3 my-5 margin-centered" src="img\tiki-gift-shop2.jpg" alt="...">
           </div>
         </div>
       </div>
     </section>
 
-    <section class="about--container section-container background-white">
+    <section class="section-container background-white">
       <div class="row">
-        <div class="col-md-6 d-inline-block img-standard">
-          <img class="img-fluid my-5 margin-centered" src="img\hula-2407825_1920.jpg" alt="...">
+        <div class="col-md-6 d-inline-block img-fill-ratio--3-2">
+          <img class="my-5 margin-centered" src="img\hula-2407825_1920.jpg" alt="...">
         </div>
         <div class="col-md-6 global-padding ">
-          <h2>Luau Shows</h2>
-          <p class="">Monthly Luau Shows are back! Shows take place on the last Saturday of every month. Tickets must be purchased in advance and are only available online. Seats are limited so keep up with shows dates on the events
+          <h3>Luau Shows</h3>
+          <p class="text-muted">Monthly Luau Shows are back! Shows take place on the last Saturday of every month. Tickets must be purchased in advance and are only available online. Seats are limited so keep up with shows dates on the events
             calendar or in the newsletter.</p>
-
           <div class="home--hero--buttons">
-            <a href="#" class="button button--solid button--blue text-centered">Buy Tickets</a>
+            <a href="events.html" class="button button--solid button--blue text-centered">Upcoming Events</a>
           </div>
         </div>
-
-
       </div>
     </section>
 
-    <section class="newsletter-signup section-container background-light black-text">
-      <h2>Hala Kahiki Newsletter</h2>
-      <p>Signup for exclusive announcements and promotions!</p>
-      <form name="mailinglist" class="form form--newsletter">
 
-        <label class="form__label" for="EmailAddress">
-          <p>Email Address</p>
-        </label>
-        <input class="form__input required" type="text" name="EmailAddress" id="EmailAddress" value="" size="30" maxlength="200">
-        <input id="fishbowl_submit" type="submit" name="Submit" class="form__submit__button button gray_button" value="Submit">
-
-      </form>
+    <section class="newsletter-signup-container">
+      <script>
+        $('.newsletter-signup-container').load('newsletter-signup.html');
+      </script>
     </section>
     <footer class="footer">
       <script>
