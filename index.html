@@ -20,15 +20,14 @@
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
 
-  <link rel="icon" href="/favicon.ico">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io//apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io//favicon-16x16.png">
+  <link rel="manifest" href="img/favicon_io/site.webmanifest">
 
 
   <link rel="stylesheet" href="vendor/bootstrap-4/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="vendor/fontawesome-free-6.1.1-web/css/all.min.css">
-  <link rel="stylesheet" href="font/FiraSans/stylesheet.css">
-  <link rel="stylesheet" href="font/Skranji/stylesheet.css">
 
   <link rel="stylesheet" href="scss/style.min.css">
 
@@ -37,9 +36,12 @@
 </head>
 
 <body>
-  <!-- your content here... -->
-
   <div class="page-body">
+    <div class="sticky-menu">
+      <script>
+        $('.sticky-menu').load('sticky-menu.html');
+      </script>
+    </div>
     <div class="home-page">
       <img src="img/design-hala-kahiki-tiki-bar-frontbar.jpg" class="home-page__background" alt="Front bar">
       <div class="home-page__front">
@@ -86,7 +88,7 @@
           <p class="text-muted">Serving the Midwest for over half a century, we've perfected our craft cocktails and service to put together a truly tropical oasis.</p>
 
           <div class="home--hero--buttons">
-            <a href="#" class="button button--solid button--blue text-centered">Discover our Drinks</a>
+            <a href="drink-menu.html" class="button button--solid button--blue text-centered">Discover our Drinks</a>
           </div>
         </div>
 
@@ -104,7 +106,7 @@
             calendar or in the newsletter.</p>
 
           <div class="home--hero--buttons">
-            <a href="#" class="button button--solid button--blue text-centered">Buy Tickets</a>
+            <a href="events.html" class="button button--solid button--blue text-centered">Upcoming Events</a>
           </div>
         </div>
 
@@ -122,7 +124,7 @@
           <p class="text-muted">From the chairs, lights, tropical decor, paintings, and original WITCO artworks, everything about us is pure escapism. Let us take your mind away to your very own tropical oasis far, far away!</p>
 
           <div class="home--hero--buttons">
-            <a href="#" class="button button--solid button--blue text-centered">Reserve Ahead</a>
+            <a href="reservations.html" class="button button--solid button--blue text-centered">Reservations</a>
           </div>
         </div>
 
@@ -138,7 +140,7 @@
           <h2>Historical Authenticity</h2>
           <p class="text-muted">Our origins trace back to Wicker Park, Chicago but since our move to River Grove, IL we've proudly served as the Midwest's most authentic retro tropical drink lounge.</p>
           <div class="home--hero--buttons">
-            <a href="about.html" class="button button--solid button--blue text-centered">Learn More About Us</a>
+            <a href="about.html" class="button button--solid button--blue text-centered">About Us</a>
           </div>
         </div>
 
@@ -151,7 +153,7 @@
       <form name="mailinglist" class="form form--newsletter">
 
         <label class="form__label" for="EmailAddress">
-          <p>Email Address</p>
+          Email Address
         </label>
         <input class="form__input required" type="text" name="EmailAddress" id="EmailAddress" value="" size="30" maxlength="200">
         <input id="fishbowl_submit" type="submit" name="Submit" class="form__submit__button button gray_button" value="Submit">
@@ -163,15 +165,8 @@
         $('.footer').load('footer.html');
       </script>
     </footer>
-
-    <div class="sticky-menu">
-      <script>
-        $('.sticky-menu').load('sticky-menu.html');
-      </script>
-      </footer>
-    </div>
     <script src="js/main.js"></script>
-
+  </div>
 </body>
 
 </html>
