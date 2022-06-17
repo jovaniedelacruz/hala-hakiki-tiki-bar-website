@@ -1,0 +1,105 @@
+//main: ../style.scss
+// _tablet.scss
+
+@media screen and (min-width:768px) {
+  .sticky-menu {
+    &__button {
+      position: fixed;
+      margin: 3.2rem 4.8rem;
+      cursor: pointer;
+      padding: 0.25em 0.75em;
+      font-size: 1.6rem;
+      line-height: 1;
+      background-color: transparent;
+      border: 1px solid transparent;
+      transition: box-shadow 0.15s ease-in-out;
+      color: rgba(255, 255, 255, 0.85);
+      -webkit-appearance: button;
+      text-transform: none;
+      z-index: 999;
+      border-radius: 0.4em;
+      background: $normalblue;
+      outline: $normalblue;
+      filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.8));
+
+      i {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 2.6rem;
+        padding: 1.6rem;
+      }
+    }
+
+    &__container {
+      position: absolute;
+    }
+
+    &__nav {
+      bottom: auto;
+      right: 0;
+      display: flex;
+      width: auto;
+      height: 100%;
+      flex-basis: 100%;
+      flex-grow: 1;
+      align-items: center;
+      border: none;
+      border-left: 4px solid #03418C;
+      filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.8));
+      transform: translateX(100%);
+      -webkit-transition: 0.5s ease-in-out;
+      -moz-transition: 0.5s ease-in-out;
+      -o-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out;
+
+      &--active {
+        transform: translateX(0);
+      }
+
+      &__list {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-top: 0;
+
+        &__item {
+          list-style-type: none;
+          text-align: center;
+          white-space: nowrap;
+
+          &--first {
+            background: initial;
+            outline: initial;
+          }
+
+          &__link {
+            font-size: 2.6rem;
+            text-align: inherit;
+            display: inline-block;
+            width: 100%;
+            padding: 1.6rem 3.2rem;
+            height: auto;
+            text-decoration: none;
+            color: white;
+            color: rgba(255, 255, 255, 0.85) !important;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+            &:hover,
+            &:visited {
+              text-decoration: none;
+              color: white;
+              color: rgba(255, 255, 255, 0.85) !important;
+            }
+
+            &:hover {
+              color: rgba(255, 255, 255, 1) !important;
+              text-decoration: underline;
+              background: $normalblue;
+              outline: $normalblue;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,20 +1,18 @@
-<div class="sticky-menu__container">
-  <div class="sticky-menu__nav__list__item sticky-menu__button__container"> &nbsp;
-    <button class="sticky-menu__button">
-      <i class="fa-solid fa-bars"></i>
-    </button>
-  </div>
-  <div class="sticky-menu__nav__list__item sticky-menu__nav__list__item--first"><a href="#" class="sticky-menu__nav__list__item__link">Order Online</a></div>
+<button class="sticky-menu__button">
+  <i class="fa-solid fa-bars"></i>
+</button>
 
+<div class="sticky-menu__container">
   <div class="sticky-menu__nav">
     <div class="sticky-menu__nav__list">
-      <div class="sticky-menu__nav__list__item"><a href="drink-menu.html" class="sticky-menu__nav__list__item__link">Drink Menu</a></div>
-      <div class="sticky-menu__nav__list__item"><a href="reservations.html" class="sticky-menu__nav__list__item__link">Reservations</a></div>
-      <div class="sticky-menu__nav__list__item"><a href="giftshop.html" class="sticky-menu__nav__list__item__link">South Seas Gift Shop</a></div>
-      <div class="sticky-menu__nav__list__item"><a href="events.html" class="sticky-menu__nav__list__item__link">Events</a></div>
-      <div class="sticky-menu__nav__list__item"><a href="about.html" class="sticky-menu__nav__list__item__link">About Us</a></div>
-      <div class="sticky-menu__nav__list__item"><a href="contact.html" class="sticky-menu__nav__list__item__link">Contact Us</a></div>
-      <div class="sticky-menu__nav__list__item"><a href="hours.html" class="sticky-menu__nav__list__item__link">Hours & Location</a></div>
+      <div class="sticky-menu__nav__list__item sticky-menu__nav__list__item--first"><a href="#" class="sticky-menu__nav__list__item__link">Order Online</a></div>
+      <div class="sticky-menu__nav__list__item sticky-menu__nav__list__item--others"><a href="drink-menu.html" class="sticky-menu__nav__list__item__link">Drink Menu</a></div>
+      <div class="sticky-menu__nav__list__item sticky-menu__nav__list__item--others"><a href="reservations.html" class="sticky-menu__nav__list__item__link">Reservations</a></div>
+      <div class="sticky-menu__nav__list__item sticky-menu__nav__list__item--others"><a href="giftshop.html" class="sticky-menu__nav__list__item__link">South Seas Gift Shop</a></div>
+      <div class="sticky-menu__nav__list__item sticky-menu__nav__list__item--others"><a href="events.html" class="sticky-menu__nav__list__item__link">Events</a></div>
+      <div class="sticky-menu__nav__list__item sticky-menu__nav__list__item--others"><a href="about.html" class="sticky-menu__nav__list__item__link">About Us</a></div>
+      <div class="sticky-menu__nav__list__item sticky-menu__nav__list__item--others"><a href="contact.html" class="sticky-menu__nav__list__item__link">Contact Us</a></div>
+      <div class="sticky-menu__nav__list__item sticky-menu__nav__list__item--others"><a href="hours.html" class="sticky-menu__nav__list__item__link">Hours & Location</a></div>
 
     </div>
   </div>
@@ -23,14 +21,37 @@
 <script>
   $(window).resize(function() {
     if ($(window).width() > 1023) {
-      $(".sticky-menu__nav").show();
-    } else {
-      $(".sticky-menu__nav").hide();
+      $(".sticky-menu__container").show();
+    } else if ($(window).width() > 767) {
+      $(".sticky-menu__nav__list__item--others").show();
+      $(".sticky-menu__nav--active").removeClass("sticky-menu__nav--active");
+
       $(".sticky-menu__button").unbind("click");
       $(".sticky-menu__button").click(function() {
-        $(".sticky-menu__nav").slideToggle();
+        $(".sticky-menu__nav").toggleClass("sticky-menu__nav--active");
+      });
+      $(".sticky-menu__button").unbind("on");
+      $(document).on("click", function(event) {
+        var $trigger = $(".sticky-menu");
+        if ($trigger !== event.target && !$trigger.has(event.target).length) {
+          $(".sticky-menu__nav--active").removeClass("sticky-menu__nav--active");
+        }
+      });
+    } else if ($(window).width() < 768) {
+
+      $(".sticky-menu__nav").addClass("sticky-menu__nav--active");
+      $(".sticky-menu__nav__list__item--others").hide();
+      $(".sticky-menu__nav__list__item--first").show();
+      $(".sticky-menu__button").unbind("click");
+      $(".sticky-menu__button").click(function() {
+        $(".sticky-menu__nav__list__item--others").slideToggle();
+      });
+      $(document).on("click", function(event) {
+        var $trigger = $(".sticky-menu");
+        if ($trigger !== event.target && !$trigger.has(event.target).length) {
+          $(".sticky-menu__nav__list__item--others").slideUp();
+        }
       });
     }
-
   }).resize();
 </script>
