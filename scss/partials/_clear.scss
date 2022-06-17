@@ -1,29 +1,21 @@
-//main:style.scss
+//main:../style.scss
 
 // _clear.scss
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 body,
 html {
-  margin: 0;
-  padding: 0;
 }
 
 * {
-  box-sizing: border-box;
-  margin:0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: block;
 }
 
 .row {
-  margin: 0;
 }
 
 .col,
@@ -96,6 +88,4 @@ body {
 .col-xl-8,
 .col-xl-9,
 .col-xl-auto {
-  padding-right: 0;
-  padding-left: 0;
 }

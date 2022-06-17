@@ -1,12 +1,9 @@
-@import "clear";
-@import "variables";
-@import "custom-classes";
-@import "fonts";
-@import "text";
+@import "partials/clear";
+@import "partials/variables";
+@import "partials/custom-classes";
+@import "partials/fonts";
+@import "partials/text";
 
-@import "partials/mobile";
-@import "partials/tablet";
-
-
-
-@media screen and (min-width:1024px) {}
+@import "partials/layout-1X";
+@import "partials/layout-2X";
+@import "partials/layout-3X";

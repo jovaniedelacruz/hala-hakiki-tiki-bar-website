@@ -1,7 +1,70 @@
 //main: ../style.scss
 // _tablet.scss
-
 @media screen and (min-width:768px) {
+  .button {
+    display: inline-block;
+    margin: 0;
+    font-family: 'Skranji';
+    font-weight: 400;
+    margin-bottom: 0;
+    color: white;
+    text-decoration: none;
+    padding: 1.6rem 3.2rem;
+    border-radius: 0.4em;
+    width:auto;
+
+    &--solid {}
+
+    &--thin {
+      background-color: transparent;
+      border: 1px solid transparent;
+    }
+
+    &--blue {
+      color: #fff;
+      background-color: $strongblue;
+      border-color: $strongblue;
+
+      &:hover {
+        background-color: $normalblue;
+        border-color: $normalblue;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+
+      a,
+      a:hover,
+      a:visited {
+        color: white;
+        text-decoration: none;
+      }
+    }
+
+    &--white {
+      color: #f8f9fa;
+      border-color: #f8f9fa;
+
+      a,
+      a:hover,
+      a:visited {
+        color: white;
+        text-decoration: none;
+      }
+
+      &:hover {
+        color: #000 !important;
+        background-color: #f8f9fa;
+        border-color: #f8f9fa;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+        a,
+        a:hover,
+        a:visited {
+          color: #000 !important;
+        }
+      }
+    }
+  }
+
   .sticky-menu {
     &__button {
       position: fixed;
