@@ -11,7 +11,7 @@
     text-decoration: none;
     padding: 1.6rem 3.2rem;
     border-radius: 0.4em;
-    width:auto;
+    width: auto;
 
     &--solid {}
 
@@ -60,6 +60,42 @@
         a:hover,
         a:visited {
           color: #000 !important;
+        }
+      }
+    }
+  }
+
+  .home-page {
+
+    &:before {}
+
+    &__background {}
+
+    & div > a,
+    & div > a:hover,
+    & div > a:visited {
+    }
+
+    &__front {
+
+      &__logo {
+
+        &__img {}
+      }
+
+      &__text {
+
+        & .home__front__text__headline:first-child {}
+
+        & .home__front__text__headline:last-child {}
+      }
+
+      &__buttons {
+
+        .button {
+        }
+
+        a {
         }
       }
     }

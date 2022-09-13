@@ -36,52 +36,58 @@
 
 <body>
   <div class="page-body">
-    <div class="sticky-menu">
+    <div class="site-nav__container">
       <script>
-        $('.sticky-menu').load('sticky-menu.html');
+        $('.site-nav__container').load('site-nav.html');
       </script>
     </div>
-    <div class="home-page">
+    <div class="home-page vh-100 position-relative">
       <img src="img/design-hala-kahiki-tiki-bar-frontbar.jpg" class="home-page__background" alt="Front bar">
-      <div class="home-page__front">
-        <a href="index.html">
-          <div class="home-page__front__logo">
-            <img src="img/Hala-Kahiki-Logo-White.png" alt="" class="home-page__front__logo__img">
+      <div class="home-page__front position-absolute top-50 start-50 translate-middle w-100">
+        <div class="container gy-4 py-5">
+          <div class="row">
+            <a href="index.html" class="">
+              <div class="home-page__front__logo">
+                <img src="img/Hala-Kahiki-Logo-White.png" alt="" class="home-page__front__logo__img vh-50">
+              </div>
+            </a>
           </div>
-          <div class="home-page__front__text">
-            <h1 class="home__front__text__headline">Hala Kahiki</h1>
-            <h3 class="home__front__text__headline">Tropical Lounge</h3>
+          <div class="row">
+            <div class="home-page__front__text d-block w-100">
+              <h1 class="home__front__text__headline">Hala Kahiki</h1>
+              <h3 class="home__front__text__headline">Tropical Lounge</h3>
+              <p class="d-none d-sm-block">The Midwest's most authentic, retro tropical drink lounge</p>
+            </div>
           </div>
-        </a>
-
-        <div class="text-center py-3 g-md-4">
-          <a href="drink-menu.html" class="my-3 mx-md-4 button button--solid button--blue">Drink Menu</a>
-          <a href="reservations.html" class="my-3 mx-md-4 button button--thin button--white">Reservations</a>
+          <div class="text-center py-3 g-md-4">
+            <a href="drink-menu.html" class="my-3 mx-md-4 button button--solid button--blue">Drink Menu</a>
+            <a href="reservations.html" class="my-3 mx-md-4 button button--thin button--white">Reservations</a>
+          </div>
         </div>
       </div>
     </div>
-
-    <section class="background-white p-5 mt-3">
-      <div class="row g-5 align-items-center">
-        <div class="col-sm-12 col-md-6 px-5 text-md-center">
+    <div class="container gy-4 py-5">
+      <div class="row gy-4 py-5 align-items-center">
+        <div class="col-md-6">
+          <div class="img-fill-ratio--3-2">
+            <img class="" src="img/tiki-bar-drink-01.jpg" alt="...">
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 text-md-center">
           <h3 class="text-md-center">Tropical Oasis</h3>
           <p class="">Serving the Midwest for over half a century, we've perfected our craft cocktails and service to put together a truly tropical oasis.</p>
           <div class="mt-4 text-md-center">
             <a href="drink-menu.html" class="button button--solid button--blue text-centered">Discover our Drinks</a>
           </div>
         </div>
-        <div class="col-md-6 px-5">
+      </div>
+      <div class="row gx-4 gy-4 py-5 align-items-center">
+        <div class="col-md-6 order-md-last">
           <div class="img-fill-ratio--3-2">
-            <img class="" src="img\tiki-bar-drink-01.jpg" alt="...">
+            <img class="" src="img/hula-2407825_1920.jpg" alt="...">
           </div>
         </div>
-
-      </div>
-    </section>
-
-    <section class="background-white p-5 mt-3">
-      <div class="row g-5 align-items-center">
-        <div class="col-sm-12 col-md-6 px-5 text-md-center">
+        <div class="col-sm-12 col-md-6 text-md-center">
           <h3 class="text-md-center">Luau Shows</h3>
           <p class="">Monthly Luau Shows are back! Shows take place on the last Saturday of every month. Tickets must be purchased in advance and are only available online. Seats are limited so keep up with shows dates on the events
             calendar or in the newsletter.</p>
@@ -89,55 +95,43 @@
             <a href="events.html" class="button button--solid button--blue text-centered">Upcoming Events</a>
           </div>
         </div>
-        <div class="col-md-6 order-sm-first px-5">
+      </div>
+      <div class="row gx-4 gy-4 px-5 py-5 align-items-center">
+        <div class="col-md-6">
           <div class="img-fill-ratio--3-2">
-            <img class="" src="img/hula-2407825_1920.jpg" alt="...">
+            <img class="" src="img/tiki-bar-upstrairs-view.jpg" alt="...">
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="background-white p-5 mt-3">
-      <div class="row g-5 align-items-center">
-        <div class="col-sm-12 col-md-6 px-5 text-md-center">
+        <div class="col-sm-12 col-md-6 text-md-center">
           <h3 class="text-md-center">Pure Escapism</h3>
           <p class="">From the chairs, lights, tropical decor, paintings, and original WITCO artworks, everything about us is pure escapism. Let us take your mind away to your very own tropical oasis far, far away!</p>
           <div class="mt-4 text-md-center">
             <a href="reservations.html" class="button button--solid button--blue text-centered">Reservations</a>
           </div>
         </div>
-        <div class="col-md-6 px-5">
+      </div>
+      <div class="row gy-4 py-5 align-items-center">
+        <div class="col-md-6 order-md-last">
           <div class="img-fill-ratio--3-2">
-            <img class="" src="img/tiki-bar-upstrairs-view.jpg" alt="...">
+            <img class="" src="img/tiki-bar-white-room-patio.jpg" alt="...">
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="background-white p-5 mt-3">
-      <div class="row g-5 align-items-center">
-        <div class="col-sm-12 col-md-6 px-5 text-md-center">
+        <div class="col-sm-12 col-md-6 text-md-center">
           <h3 class="text-md-center">Historical Authenticity</h3>
           <p class="">Our origins trace back to Wicker Park, Chicago but since our move to River Grove, IL we've proudly served as the Midwest's most authentic retro tropical drink lounge.</p>
           <div class="mt-4 text-md-center">
             <a href="about.html" class="button button--solid button--blue text-centered">About Us</a>
           </div>
         </div>
-        <div class="col-md-6 order-sm-first px-5">
-          <div class="img-fill-ratio--3-2">
-            <img class="" src="img/tiki-bar-white-room-patio.jpg" alt="...">
-          </div>
-        </div>
-
       </div>
-    </section>
-    <section class="newsletter-signup-container">
+    </div>
+    <section id="newsletter-signup-container" class="background-lightorange">
       <script>
-        $('.newsletter-signup-container').load('newsletter-signup.html');
+        $('#newsletter-signup-container').load('newsletter-signup.html');
       </script>
     </section>
 
-    <footer class="footer">
+    <footer class="footer background-darkblue">
       <script>
         $('.footer').load('footer.html');
       </script>

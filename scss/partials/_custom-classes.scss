@@ -6,12 +6,38 @@
 }
 
 .img-fluid {
+  position: relative;
   max-width: 100%;
   height: auto;
+  overflow: hidden;
+  object-fit: cover;
+
   &--width {
-    height:initial;
-    max-height: 100%;
+    height: auto;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+
+    img {
+      object-fit: cover;
+    }
+  }
+  &--height {
     width:auto;
+    height:100%;
+    max-width: 100%;
+    min-height: 100%;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  img {
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -66,23 +92,43 @@
 }
 
 .background-white {
-  background: white;
+  background-color: white;
 }
 
 .background-gray {
-  background: #f8f9fa;
+  background-color: #f8f9fa;
 }
 
 .background-light {
-  background: $light;
+  background-color: $light;
 }
 
 .background-darkblue {
-  background: $darkblue;
+  background-color: $darkblue;
 }
 
 .background-strongblue {
-  background: $strongblue;
+  background-color: $strongblue;
+}
+
+.background-lightorange {
+  background-color: $lightorange;
+}
+
+.background-pattern {
+  background-repeat: repeat;
+
+  &--pineapples {
+    background-image: url("/img/seamless/pineapple-seamless.png");
+  }
+
+  &--tree-bark {
+    background-image: url("/img/seamless/tree-bark.png");
+  }
+
+  &--rocky-wall {
+    background-image: url("/img/seamless/rocky-wall.png");
+  }
 }
 
 .white-text {
