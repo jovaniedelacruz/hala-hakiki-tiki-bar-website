@@ -7,20 +7,44 @@
       <i class="fa-solid fa-bars"></i>
     </button>
   </div>
-  <div class="site-nav__menu">
-    <div class="site-nav__menu__list">
-      <div class="site-nav__menu__list__item "><a href="#" class="site-nav__menu__list__item__link">Order Online</a></div>
-      <div class="site-nav__menu__list__item "><a href="drink-menu.html" class="site-nav__menu__list__item__link">Drink Menu</a></div>
-      <div class="site-nav__menu__list__item "><a href="reservations.html" class="site-nav__menu__list__item__link">Reservations</a></div>
-      <div class="site-nav__menu__list__item "><a href="giftshop.html" class="site-nav__menu__list__item__link">South Seas Gift Shop</a></div>
-      <div class="site-nav__menu__list__item "><a href="events.html" class="site-nav__menu__list__item__link">Events</a></div>
-      <div class="site-nav__menu__list__item "><a href="about.html" class="site-nav__menu__list__item__link">About Us</a></div>
-      <div class="site-nav__menu__list__item "><a href="contact.html" class="site-nav__menu__list__item__link">Contact Us</a></div>
-      <div class="site-nav__menu__list__item "><a href="hours.html" class="site-nav__menu__list__item__link">Hours & Location</a></div>
-    </div>
+  <div class="site-nav--mobile">
+    <div class="site-nav__menu">
+      <div class="site-nav__menu__list">
+        <div class="site-nav__menu__list__item "><a href="#" class="site-nav__menu__list__item__link">Order Online</a></div>
+        <div class="site-nav__menu__list__item "><a href="drink-menu.html" class="site-nav__menu__list__item__link">Drink Menu</a></div>
+        <div class="site-nav__menu__list__item "><a href="reservations.html" class="site-nav__menu__list__item__link">Reservations</a></div>
+        <div class="site-nav__menu__list__item "><a href="giftshop.html" class="site-nav__menu__list__item__link">South Seas Gift Shop</a></div>
+        <div class="site-nav__menu__list__item "><a href="events.html" class="site-nav__menu__list__item__link">Events</a></div>
+        <div class="site-nav__menu__list__item "><a href="about.html" class="site-nav__menu__list__item__link">About Us</a></div>
+        <div class="site-nav__menu__list__item "><a href="contact.html" class="site-nav__menu__list__item__link">Contact Us</a></div>
+        <div class="site-nav__menu__list__item "><a href="hours.html" class="site-nav__menu__list__item__link">Hours & Location</a></div>
+      </div>
 
-  </div>
-  <div class="site-nav__logo" style="">
-    <img src="img/Hala-Kahiki-Black.png" alt="" class="">
+    </div>
+    <div class="site-nav__logo" style="">
+      <img src="img/Hala-Kahiki-Black.png" alt="" class="">
+    </div>
   </div>
 </div>
+
+<script>
+  $(window).resize(function() {
+    if ($(window).width() < 768) {
+      $(".site-nav--mobile").hide();
+      $(".site-nav__header__button").unbind("click");
+      $(".site-nav__header__button").click(function() {
+        $(".site-nav--mobile").fadeToggle("slow", function() {
+          // Animation complete
+        });
+      });
+      $(document).on("click", function(event) {
+        var $trigger = $(".site-nav");
+        if ($trigger !== event.target && !$trigger.has(event.target).length) {
+          $(".site-nav--mobile").fadeOut("slow", function() {
+            // Animation complete
+          });
+        }
+      });
+    }
+  }).resize();
+</script>
