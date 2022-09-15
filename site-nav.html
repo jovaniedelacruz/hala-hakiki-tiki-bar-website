@@ -1,4 +1,4 @@
-<div class="site-nav">
+<div class="site-nav reactive">
   <div class="site-nav__header">
     <div class="site-nav__header__title">
       <a href="/"><h1>Chicago Tiki</h1></a>
@@ -7,8 +7,8 @@
       <i class="fa-solid fa-bars"></i>
     </button>
   </div>
-  <div class="site-nav--mobile active">
-    <div class="site-nav__menu site-nav--mobile__item">
+  <div class="site-nav--mobile reactive">
+    <div class="site-nav__menu site-nav--mobile__item reactive">
       <div class="site-nav__menu__list">
         <div class="site-nav__menu__list__item "><a href="#" class="site-nav__menu__list__item__link">Order Online</a></div>
         <div class="site-nav__menu__list__item "><a href="drink-menu.html" class="site-nav__menu__list__item__link">Drink Menu</a></div>
@@ -21,7 +21,7 @@
       </div>
 
     </div>
-    <div class="site-nav__logo site-nav--mobile__item" style="">
+    <div class="site-nav__logo site-nav--mobile__item reactive" style="">
       <img src="img/Hala-Kahiki-Black.png" alt="" class="">
     </div>
   </div>
@@ -30,30 +30,15 @@
 <script>
   $(window).resize(function() {
     if ($(window).width() < 768) {
-      if ($('.site-nav--mobile').hasClass('active')) {
-        $('.site-nav--mobile').removeClass('active');
-      }
+      $('.reactive').addClass('hidden');
       $(".site-nav__header__button").unbind("click");
-
       $(".site-nav__header__button").last().click(function() {
-        if ($('.site-nav--mobile').hasClass('active')) {
-          $('.site-nav--mobile').removeClass('active');
+        if ($('.reactive').hasClass('hidden')) {
+          $('.reactive').removeClass('hidden');
         } else {
-          $('.site-nav--mobile').addClass('active');
+          $('.reactive').addClass('hidden');
         }
-
-
         //$(".site-nav--mobile").last().fadeToggle("200", function() {});
-      });
-      $(document).on("click", function(event) {
-        var $trigger = $(".site-nav");
-        if ($trigger !== event.target && !$trigger.has(event.target).length) {
-          if ($('.site-nav--mobile').hasClass('active')) {
-            $('.site-nav--mobile').removeClass('active');
-          } else {
-            $('.site-nav--mobile').addClass('active');
-          }
-        }
       });
     }
   }).resize();
