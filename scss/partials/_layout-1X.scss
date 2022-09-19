@@ -276,7 +276,7 @@
       }
 
       &__header {
-        flex:0 0 100%;
+      flex: 1 0 100%;
         height: 7.2rem;
         max-height: 7.2rem;
         overflow-y: hidden;
@@ -286,7 +286,6 @@
           max-height: 5.4rem;
         }
         pointer-events: auto;
-        flex: 0 1 auto;
         background: $theme-background;
         outline: $theme-background;
         color: $theme-extra;
