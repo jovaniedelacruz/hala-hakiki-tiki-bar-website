@@ -259,7 +259,7 @@
         padding-top:0;
         margin-bottom: 0;
         overflow: hidden;
-        transition: 0.25s opacity ease-in-out, 0.25s visibility ease-in-out, 0.25s margin ease-in-out, 0.25s padding ease-in-out;
+        transition: 0.25s opacity ease-in-out, 0.25s visibility ease-in-out;
         pointer-events: auto;
 
         &.hidden {
@@ -276,7 +276,7 @@
       }
 
       &__header {
-        flex: 0 0 100%;
+      flex: 1 0 100%;
         height: 7.2rem;
         max-height: 7.2rem;
         overflow-y: hidden;
