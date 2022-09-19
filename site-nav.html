@@ -64,7 +64,9 @@
 
   $(document).on("scroll", function() {
     if ($(document).scrollTop() > 100) {
-      $(".site-nav__header").addClass("shrink");
+      if ($('.reactive').hasClass('hidden')) {
+        $(".site-nav__header").addClass("shrink");
+      }
     } else {
       $(".site-nav__header").removeClass("shrink");
     }

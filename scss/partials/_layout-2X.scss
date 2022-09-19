@@ -103,6 +103,7 @@
 
   .site-nav__container {
     margin-top: 5.4rem;
+    width: 100%;
 
     .site-nav {
       position: fixed;
@@ -117,13 +118,12 @@
       flex-direction: column;
       pointer-events: none;
 
-      &.hidden {
-        overflow: hidden;
-      }
+      &.hidden {}
 
       &--mobile {
         height: 100vh;
         max-height: 100vh;
+        width: 100%;
         flex: 1 1 auto;
         background: $theme-background;
         outline: $theme-background;
@@ -131,17 +131,17 @@
         flex-direction: column;
         visibility: visible;
         opacity: 100%;
-        padding-top: 0;
+        padding-top:0;
         margin-bottom: 0;
-        transition: 0.25s all ease-in-out;
+        overflow: hidden;
+        transition: 0.25s opacity ease-in-out, 0.25s visibility ease-in-out, 0.25s margin ease-in-out, 0.25s padding ease-in-out;
         pointer-events: auto;
 
         &.hidden {
-          padding-top: 15px;
-          margin-bottom: -15px;
+          padding-top: 1.5rem;
+          margin-bottom: -1.5rem;
           opacity: 0;
           visibility: hidden;
-          overflow: hidden;
           pointer-events: none;
         }
 
@@ -151,13 +151,16 @@
       }
 
       &__header {
+      flex: 1 0 100%;
         height: 7.2rem;
+        max-height: 7.2rem;
+        overflow-y: hidden;
+        transition: max-height 0.25s ease-in-out;
 
         &.shrink {
-          height: 5.4rem;
+          max-height: 5.4rem;
         }
         pointer-events: auto;
-        flex: 0 1 auto;
         background: $theme-background;
         outline: $theme-background;
         color: $theme-extra;
@@ -211,17 +214,17 @@
       }
 
       &__menu {
-        flex: 5 0 auto;
+        flex: 1 0 auto;
         width: 100%;
         display: flex;
 
         &__list {
+          flex: 1 0 100%;
           position: relative;
-          margin: auto;
+          margin: 0;
           padding: 0;
           display: flex;
           width: 100%;
-          height: 100%;
           justify-content: center;
           flex-direction: column;
 
@@ -263,16 +266,19 @@
       }
 
       &__logo {
-        flex: 0 5 auto;
-        padding-bottom: 1.6rem;
+        flex: 0 1 auto;
+        margin:0;
+        padding:0;
+        padding-bottom: 3rem;
         min-height: 10vh;
-        height: 15vh;
+        max-height: 20vh;
 
         img {
           display: block;
           width: auto;
           height: 100%;
           margin: 0 auto;
+          padding: 0;
         }
       }
     }
