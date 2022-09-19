@@ -259,7 +259,7 @@
         padding-top:0;
         margin-bottom: 0;
         overflow: hidden;
-        transition: 0.25s opacity ease-in-out, 0.25s visibility ease-in-out;
+        transition: 0.25s opacity ease-in-out, 0.25s visibility ease-in-out, 0.25s margin ease-in-out, 0.25s padding ease-in-out;
         pointer-events: auto;
 
         &.hidden {
