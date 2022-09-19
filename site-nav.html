@@ -1,7 +1,9 @@
 <div class="site-nav reactive">
   <div class="site-nav__header">
     <div class="site-nav__header__title">
-      <a href="/"><h1>Chicago Tiki</h1></a>
+      <a href="/">
+        <h1>Chicago Tiki</h1>
+      </a>
     </div>
     <button class="site-nav__header__button">
       <i class="fa-solid fa-bars"></i>
@@ -28,18 +30,43 @@
 </div>
 
 <script>
-  $(window).resize(function() {
-    if ($(window).width() < 768) {
+  if ($(window).width() > 1023) {
+    if ($('.reactive').hasClass('hidden')) {
+      $('.reactive').removeClass('hidden');
+    }
+  }
+  $(".site-nav__header__button").unbind("click");
+  $(".site-nav__header__button").last().click(function() {
+    if ($('.reactive').hasClass('hidden')) {
+      $('.reactive').removeClass('hidden');
+      if ($(".site-nav__header").hasClass('shrink')) {
+        $(".site-nav__header").removeClass("shrink");
+      }
+    } else {
       $('.reactive').addClass('hidden');
-      $(".site-nav__header__button").unbind("click");
-      $(".site-nav__header__button").last().click(function() {
-        if ($('.reactive').hasClass('hidden')) {
-          $('.reactive').removeClass('hidden');
-        } else {
-          $('.reactive').addClass('hidden');
-        }
-        //$(".site-nav--mobile").last().fadeToggle("200", function() {});
-      });
+      if ($(document).scrollTop() > 100) {
+        $(".site-nav__header").addClass("shrink");
+      };
+
+    }
+  });
+  $(window).resize(function() {
+    if ($(window).width() > 1023) {
+      if ($('.reactive').hasClass('hidden')) {
+        $('.reactive').removeClass('hidden');
+      }
+    } else if ($(window).width() > 767) {
+      $('.reactive').addClass('hidden');
+    } else if ($(window).width() < 767) {
+      $('.reactive').addClass('hidden');
+    }
+  }).resize();
+
+  $(document).on("scroll", function() {
+    if ($(document).scrollTop() > 100) {
+      $(".site-nav__header").addClass("shrink");
+    } else {
+      $(".site-nav__header").removeClass("shrink");
     }
   }).resize();
 </script>
